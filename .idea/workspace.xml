@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="" />
+    <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="Стартовое добавление ядра сайта">
+      <change afterPath="$PROJECT_DIR$/app/Controllers/UserController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -26,14 +31,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1geCYW5dcB1THygbbAUKIPX0m1P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Views/Layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -71,12 +78,24 @@
       <workItem from="1599149529699" duration="3687000" />
       <workItem from="1599298946751" duration="5211000" />
       <workItem from="1599383465292" duration="171000" />
-      <workItem from="1599383711581" duration="344000" />
+      <workItem from="1599383711581" duration="668000" />
     </task>
+    <task id="LOCAL-00001" summary="Стартовое добавление ядра сайта">
+      <created>1599384343117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599384343117</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Стартовое добавление ядра сайта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Стартовое добавление ядра сайта" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1101" y="176" width="700" height="752" key="#PHP" timestamp="1598466554527">
@@ -87,10 +106,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1218" y="336" width="467" height="432" key="#Web_Browsers/67.27.1853.1053@67.27.1853.1053" timestamp="1598466539896" />
-    <state x="1234" y="311" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599384046198">
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl" timestamp="1599384086697">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1234" y="311" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1599384046198" />
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1599384086697" />
     <state x="1342" y="265" key="Github.ShareDialog" timestamp="1599383698601">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -107,6 +126,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="859" y="193" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1599384054937" />
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599384378688">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1599384378688" />
     <state x="1213" y="193" width="466" height="721" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599300751577">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
