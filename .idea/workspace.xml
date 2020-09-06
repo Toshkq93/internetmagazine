@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/gabordemooij/redbean" />
+      <path value="$PROJECT_DIR$/vendor/izniburak/router" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1geCYW5dcB1THygbbAUKIPX0m1P" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Views/Layouts" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Views/user" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Views/Layouts" />
+      <recent name="$PROJECT_DIR$/core" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/error" />
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="" />
+      <created>1598465719913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598465719913</updated>
+      <workItem from="1598465721736" duration="1661000" />
+      <workItem from="1598546812222" duration="51000" />
+      <workItem from="1598546863843" duration="1883000" />
+      <workItem from="1598549379052" duration="1397000" />
+      <workItem from="1598775671831" duration="1697000" />
+      <workItem from="1598890273185" duration="926000" />
+      <workItem from="1598894537875" duration="2454000" />
+      <workItem from="1598976443645" duration="706000" />
+      <workItem from="1598978904817" duration="599000" />
+      <workItem from="1599063352903" duration="7818000" />
+      <workItem from="1599149529699" duration="3687000" />
+      <workItem from="1599298946751" duration="5211000" />
+      <workItem from="1599383465292" duration="171000" />
+      <workItem from="1599383711581" duration="344000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1101" y="176" width="700" height="752" key="#PHP" timestamp="1598466554527">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1101" y="176" width="700" height="752" key="#PHP/67.27.1853.1053@67.27.1853.1053" timestamp="1598466554527" />
+    <state x="1218" y="336" width="467" height="432" key="#Web_Browsers" timestamp="1598466539896">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1218" y="336" width="467" height="432" key="#Web_Browsers/67.27.1853.1053@67.27.1853.1053" timestamp="1598466539896" />
+    <state x="1234" y="311" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599384046198">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1234" y="311" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1599384046198" />
+    <state x="1342" y="265" key="Github.ShareDialog" timestamp="1599383698601">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1342" y="265" key="Github.ShareDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599383698601" />
+    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog" timestamp="1599069256508">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599069256508" />
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog" timestamp="1599070282018">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599070282018" />
+    <state x="859" y="193" key="SettingsEditor" timestamp="1599384054937">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="859" y="193" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1599384054937" />
+    <state x="1213" y="193" width="466" height="721" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599300751577">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1213" y="193" width="466" height="721" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1599300751577" />
+    <state x="1141" y="162" width="620" height="783" key="find.popup" timestamp="1599300765480">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1141" y="162" width="620" height="783" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599300765480" />
+    <state x="1100" y="272" width="700" height="530" key="recent.locations.popup" timestamp="1598890766327">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1100" y="272" width="700" height="530" key="recent.locations.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1598890766327" />
+    <state x="1115" y="254" key="run.anything.popup" timestamp="1599151196207">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1115" y="254" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599151196207" />
+    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599151213322">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599151213322" />
+  </component>
+</project>
