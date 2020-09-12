@@ -14,6 +14,9 @@ $router = new Router([
 $router->get('', 'MainController@index');
 
 $router->post('/login', 'UserController@login');
+$router->get('/signup', 'UserController@signup');
+$router->post('/register', 'UserController@register');
+$router->get('/logout', 'UserController@logout');
 
 $router->error(function () {
     include WWW . '/error/404.html';

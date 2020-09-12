@@ -63,7 +63,7 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 
 <ul class="header-in">
     <li class="nav-item active">
-        <a class="nav-link" href="#">Главная</a>
+        <a class="nav-link" href="<?= PATH;?>">Главная</a>
     </li>
 
     <li class="nav-item">
@@ -77,13 +77,14 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Аккаунт</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <!--<form class="login" action="<?/*= APP;*/?>/user/login" method="post">
-                <input type="text" name="user_email" placeholder="email">
-                <input type="password" name="user_password" placeholder="password"><br><br>
-                .button
-                <input type="submit" value="Войти" style="float: left">
-                <input type="submit" value="Регистрация" style="float: left">
-            </form><br>-->
+            <?php if (isset($_SESSION['user'])): ?>
+                <a href="<?= PATH;?>/kabinet">Добро пожаловать, <?= $_SESSION['user']['user_name'];?></a><br>
+                <?php if ($_SESSION['user']['is_admin']): ?>
+                    <a href="<?= ADMIN;?>">Вход в админскую часть</a><br>
+                <?php endif; ?>
+                <a href="<?= PATH;?>/cabinet">Личный кабинет</a><br>
+                <a href="<?= PATH;?>/logout">Выход</a>
+    <?php else:?>
             <form class="form-horizontal" method="post" action="<?= PATH;?>/login">
                 <span class="heading">Вход</span>
                 <div class="form-group">
@@ -104,8 +105,9 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
                     <button type="submit" class="btn btn-default">ВХОД</button>
                 </div>
             </form>
-            <a href="#" class="dropdown-item">Регистрация</a>
+            <a href="<?= PATH;?>/signup" class="dropdown-item">Регистрация</a>
             <a class="dropdown-item" href="#">Забыли пароль?</a>
+    <?php endif;?>
         </div>
     </li>
 
@@ -148,124 +150,7 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 </div>
 <div class="top-nav">
 <ul class="megamenu skyblue">
-<li class="active grid"><a  href="#">Мода</a>
-    <div class="megapanel">
-        <div class="row">
-            <div class="col1">
-                <div class="h_nav">
-                    <ul>
-<li><a href="products.html">Акксесуары</a></li>
-<li><a href="products.html">Сумки</a></li>
-<li><a href="products.html">Кепки и шляпы</a></li>
-<li><a href="products.html">Толстовки и кофты</a></li>
-<li><a href="products.html">Куртки и пальто</a></li>
-<li><a href="products.html">Джинсы</a></li>
-<li><a href="products.html">Ювелирные изделия</a></li>
-<li><a href="products.html">Джемперы и кардиганы</a></li>
-<li><a href="products.html">Кожанные куртки</a></li>
-<li><a href="products.html">Футболки с длинными рукавами</a></li>
-<li><a href="products.html">Одежда для дома</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="h_nav">
-                    <ul>
-<li><a href="products.html">Рубашки</a></li>
-<li><a href="products.html">Обувь, ботинки и кроссовки</a></li>
-<li><a href="products.html">Шорты</a></li>
-<li><a href="products.html">Костюмы и блейзеры</a></li>
-<li><a href="products.html">Солнцезащитные очки</a></li>
-<li><a href="products.html">спортивные штаны</a></li>
-<li><a href="products.html">Купальники</a></li>
-<li><a href="products.html">Брюки и брюки чинос</a></li>
-<li><a href="products.html">Футболки</a></li>
-<li><a href="products.html">Нижнее белье и носки</a></li>
-<li><a href="products.html">Жилеты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</li>
-<li><a   href="#">Мебель и декор</a>
-    <div class="megapanel">
-        <div class="row">
-            <div class="col1">
-                <div class="h_nav">
-                    <ul>
-<li><a href="decor.html">Кровать</a></li>
-<li><a href="decor.html">Сундук</a></li>
-<li><a href="decor.html">Табурет и подставка</a></li>
-<li><a href="decor.html">Стул и ковер</a></li>
-<li><a href="decor.html">Занавес и брикс</a></li>
-<li><a href="decor.html">Полка</a></li>
-<li><a href="decor.html">Рабочий стол</a></li>
-<li><a href="decor.html">Диван и Ансон</a></li>
-<li><a href="decor.html">Скамья</a></li>
-<li><a href="decor.html">Раковина</a></li>
-<li><a href="decor.html">Лампа</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="h_nav">
-                    <ul>
-<li><a href="decor.html">Кресло</a></li>
-<li><a href="decor.html">Скамья Рейдера</a></li>
-<li><a href="decor.html">Ковер и стол</a></li>
-<li><a href="decor.html">Шкаф и лампа</a></li>
-<li><a href="decor.html">Автокресло</a></li>
-<li><a href="decor.html">Кресло</a></li>
-<li><a href="decor.html">Энсон</a></li>
-<li><a href="decor.html">Карлстад</a></li>
-<li><a href="decor.html">Камилла и гардероб</a></li>
-<li><a href="decor.html">Колтон</a></li>
-<li><a href="decor.html">Брикс</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div></li>
-<li class="grid"><a  href="#">Моб. телефоны и планшеты</a>
-    <div class="megapanel">
-        <div class="row">
-            <div class="col1">
-                <div class="h_nav">
-                    <ul>
-<li><a href="mobile.html">Lenovo </a></li>
-<li><a href="mobile.html">Motorola</a></li>
-<li><a href="mobile.html">Samsung </a></li>
-<li><a href="mobile.html">Htc Tab</a></li>
-<li><a href="mobile.html">Dell & Compaq</a></li>
-<li><a href="mobile.html">Asus</a></li>
-<li><a href="mobile.html">Microsoft</a></li>
-<li><a href="mobile.html">Moto E & Moto G</a></li>
-<li><a href="mobile.html">Intex</a></li>
-<li><a href="mobile.html">Hauwei Lumia</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col1">
-                <div class="h_nav">
-                    <ul>
-<li><a href="mobile.html">Asus Zenfone 2</a></li>
-<li><a href="mobile.html">Nikon & Sony</a></li>
-<li><a href="mobile.html">Shorts</a></li>
-<li><a href="mobile.html">Olymplus</a></li>
-<li><a href="mobile.html">Sunglasses</a></li>
-<li><a href="mobile.html">Samsung Nx</a></li>
-<li><a href="mobile.html">Printers & Monitors</a></li>
-<li><a href="mobile.html">Routers</a></li>
-<li><a href="mobile.html">Data Cards</a></li>
-<li><a href="mobile.html">Mouse & Keyboard</a></li>
-<li><a href="mobile.html">Ink Cartridges</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</li>
+    <?php new \app\Helper\MenuHelper();?>
 </ul>
 </div>
 <div class="cart box_1">
@@ -282,20 +167,27 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 </div>
 </div>
 </div>
-</div>
-<div class="col-md-12">
-    <?php if(isset($_SESSION['error'])): ?>
-        <div class="alert alert-danger">
-            <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
+
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <?php if(isset($_SESSION['error'])): ?>
+                    <div class="alert alert-danger">
+                        <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if(isset($_SESSION['success'])): ?>
+                    <div class="alert alert-success">
+                        <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
-    <?php endif; ?>
-    <?php if(isset($_SESSION['success'])): ?>
-        <div class="alert alert-success">
-            <?php echo $_SESSION['success']; unset($_SESSION['success']);?>
-        </div>
-    <?php endif; ?>
+    </div>
+    <?=$content;?>
 </div>
-<?= $content;?>
+
 <!--footer-->
 <div class="footer">
 <div class="container">

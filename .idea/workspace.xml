@@ -1,8 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="Стартовое добавление ядра сайта">
-      <change afterPath="$PROJECT_DIR$/app/Controllers/UserController.php" afterDir="false" />
+    <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="Добавлена автризация и регистрация, меню">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helper/AuthHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helper/MenuHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/menu/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/user/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/ar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/az.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/bg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/de.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/el.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/en.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/es.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/fi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/fr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/it.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/ja.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/ko.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/lt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/lv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/nb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/nl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/nn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/no.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/pl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/pt-br.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/ro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/ru.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/sk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/sv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/th.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/tr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/uk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/vi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/zh-cn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lang/zh-tw.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/az.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/bg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/de.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/el.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/en.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/es.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/fi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/fr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/it.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ja.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ko.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/lt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/lv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/nb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/nl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/nn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/no.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/pl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/pt-br.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ru.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/sk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/sv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/th.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/tr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/uk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/vi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/zh-cn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/zh-tw.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/src/Valitron/Validator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.loc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Layouts/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Layouts/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/megamenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/megamenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gabordemooij/redbean" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gabordemooij/redbean" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,38 +133,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/gabordemooij/redbean" />
       <path value="$PROJECT_DIR$/vendor/izniburak/router" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/valitron" />
     </include_path>
   </component>
   <component name="ProjectId" id="1geCYW5dcB1THygbbAUKIPX0m1P" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowCommit.ShowToolbar" value="false" />
+    <property name="ToolWindowPull Requests.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/app/Views/Layouts" />
+      <recent name="$PROJECT_DIR$/core" />
+      <recent name="$PROJECT_DIR$/public/error" />
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Views/user" />
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Views/Layouts" />
-      <recent name="$PROJECT_DIR$/core" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/error" />
-      <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,7 +195,13 @@
       <workItem from="1599149529699" duration="3687000" />
       <workItem from="1599298946751" duration="5211000" />
       <workItem from="1599383465292" duration="171000" />
-      <workItem from="1599383711581" duration="668000" />
+      <workItem from="1599383711581" duration="3455000" />
+      <workItem from="1599412432984" duration="7362000" />
+      <workItem from="1599494632157" duration="5977000" />
+      <workItem from="1599583594474" duration="4190000" />
+      <workItem from="1599590519575" duration="1373000" />
+      <workItem from="1599667020052" duration="5265000" />
+      <workItem from="1599904292290" duration="401000" />
     </task>
     <task id="LOCAL-00001" summary="Стартовое добавление ядра сайта">
       <created>1599384343117</created>
@@ -87,49 +210,99 @@
       <option name="project" value="LOCAL" />
       <updated>1599384343117</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Стартовое добавление ядра сайта">
+      <created>1599384617913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599384617913</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавлена автризация и регистрация, меню">
+      <created>1599904551841</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599904551841</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавлена автризация и регистрация, меню">
+      <created>1599904688733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599904688733</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Стартовое добавление ядра сайта" />
-    <option name="LAST_COMMIT_MESSAGE" value="Стартовое добавление ядра сайта" />
+    <MESSAGE value="Добавлена автризация и регистрация, меню" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена автризация и регистрация, меню" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1101" y="176" width="700" height="752" key="#PHP" timestamp="1598466554527">
+    <state x="1034" y="210" width="824" height="684" key="#CLI_Interpreters" timestamp="1599499246122">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1101" y="176" width="700" height="752" key="#PHP/67.27.1853.1053@67.27.1853.1053" timestamp="1598466554527" />
+    <state x="1034" y="210" width="824" height="684" key="#CLI_Interpreters/67.27.1853.1053@67.27.1853.1053" timestamp="1599499246122" />
+    <state x="1159" y="378" width="575" height="350" key="#Notifications" timestamp="1599499196693">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1159" y="378" width="575" height="350" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1599499196693" />
+    <state x="1101" y="176" width="710" height="752" key="#PHP" timestamp="1599499247295">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1101" y="176" width="710" height="752" key="#PHP/67.27.1853.1053@67.27.1853.1053" timestamp="1599499247295" />
     <state x="1218" y="336" width="467" height="432" key="#Web_Browsers" timestamp="1598466539896">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1218" y="336" width="467" height="432" key="#Web_Browsers/67.27.1853.1053@67.27.1853.1053" timestamp="1598466539896" />
-    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl" timestamp="1599384086697">
+    <state x="1036" y="215" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599384746658">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1599384086697" />
+    <state x="1036" y="215" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599384746658" />
+    <state x="113" y="174" width="1482" height="872" key="DiffContextDialog" timestamp="1599384646227">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="113" y="174" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599384646227" />
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl" timestamp="1599499245015">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1599499245015" />
     <state x="1342" y="265" key="Github.ShareDialog" timestamp="1599383698601">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1342" y="265" key="Github.ShareDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599383698601" />
-    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog" timestamp="1599069256508">
+    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog" timestamp="1599498834061">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599069256508" />
-    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog" timestamp="1599070282018">
+    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599498834061" />
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog" timestamp="1599498971840">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599070282018" />
-    <state x="859" y="193" key="SettingsEditor" timestamp="1599384054937">
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599498971840" />
+    <state x="685" y="204" key="SettingsEditor" timestamp="1599384531135">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="859" y="193" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1599384054937" />
-    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599384378688">
+    <state x="685" y="204" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1599384531135" />
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599384649495">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1599384378688" />
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1599384649495" />
     <state x="1213" y="193" width="466" height="721" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599300751577">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -138,17 +311,21 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1141" y="162" width="620" height="783" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599300765480" />
+    <state x="1246" y="465" width="381" height="176" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1599384605548">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1246" y="465" width="381" height="176" key="git4idea.remote.GitConfigureRemotesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599384605548" />
     <state x="1100" y="272" width="700" height="530" key="recent.locations.popup" timestamp="1598890766327">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1100" y="272" width="700" height="530" key="recent.locations.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1598890766327" />
-    <state x="1115" y="254" key="run.anything.popup" timestamp="1599151196207">
+    <state x="1115" y="254" key="run.anything.popup" timestamp="1599498856772">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1115" y="254" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599151196207" />
-    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599151213322">
+    <state x="1115" y="254" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599498856772" />
+    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599583049255">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599151213322" />
+    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599583049255" />
   </component>
 </project>
