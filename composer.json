@@ -8,6 +8,7 @@
   },
   "require": {
     "gabordemooij/redbean": "dev-master",
-    "izniburak/router": "v1.5.3"
+    "izniburak/router": "v1.5.3",
+    "vlucas/valitron": "v1.4.7"
   }
 }

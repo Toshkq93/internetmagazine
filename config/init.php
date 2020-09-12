@@ -5,9 +5,8 @@ define("WWW", ROOT . '/public');
 define("APP", ROOT . '/app');
 define("CORE", ROOT . '/core');
 define("CONF", ROOT . '/config');
-define("CACHE", ROOT . '/tmp/cache');
+define("CACHE", ROOT . '/tmp');
 define("LAYOUT", 'layout');
-
 
 $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";
 $app_path = preg_replace("#[^/]+$#", '', $app_path);

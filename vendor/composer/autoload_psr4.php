@@ -9,6 +9,7 @@ return array(
     'core\\' => array($baseDir . '/core'),
     'config\\' => array($baseDir . '/config'),
     'app\\' => array($baseDir . '/app'),
+    'Valitron\\' => array($vendorDir . '/vlucas/valitron/src/Valitron'),
     'RedBeanPHP\\' => array($vendorDir . '/gabordemooij/redbean/RedBeanPHP'),
     'Buki\\' => array($vendorDir . '/izniburak/router/src'),
 );
