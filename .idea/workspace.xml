@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,99 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="Добавлена автризация и регистрация, меню">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helper/AuthHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helper/MenuHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Views/menu/menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Views/user/signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/ar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/az.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/bg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/de.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/el.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/en.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/es.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/fi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/fr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/it.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/ja.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/ko.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/lt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/lv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/nb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/nl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/nn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/no.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/pl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/pt-br.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/ro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/ru.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/sk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/sv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/th.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/tr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/uk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/vi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/zh-cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/zh-tw.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/.github/FUNDING.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/az.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/bg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/de.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/el.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/en.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/es.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/fi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/fr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/it.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ja.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ko.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/lt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/lv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/nb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/nl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/nn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/no.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/pl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/pt-br.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/ru.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/sk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/sv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/th.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/tr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/uk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/vi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/zh-cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/lang/zh-tw.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/vlucas/valitron/src/Valitron/Validator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.loc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helper/CurrencyHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Arrivals.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Currency.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Sale.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/currency/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/Layouts/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Layouts/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/main/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/megamenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/megamenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gabordemooij/redbean" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gabordemooij/redbean" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/my.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/my.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,8 +83,8 @@
     <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="ToolWindowPull Requests.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../first.loc" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -201,7 +127,23 @@
       <workItem from="1599583594474" duration="4190000" />
       <workItem from="1599590519575" duration="1373000" />
       <workItem from="1599667020052" duration="5265000" />
-      <workItem from="1599904292290" duration="401000" />
+      <workItem from="1599904292290" duration="1404000" />
+      <workItem from="1599915664981" duration="701000" />
+      <workItem from="1599916727578" duration="3661000" />
+      <workItem from="1599924433978" duration="113000" />
+      <workItem from="1599987146222" duration="639000" />
+      <workItem from="1599988335291" duration="2451000" />
+      <workItem from="1599994115896" duration="946000" />
+      <workItem from="1599996373639" duration="4796000" />
+      <workItem from="1600008370569" duration="871000" />
+      <workItem from="1600009267997" duration="1944000" />
+      <workItem from="1600100885564" duration="2273000" />
+      <workItem from="1600109466628" duration="36000" />
+      <workItem from="1600109565087" duration="1548000" />
+      <workItem from="1600274432214" duration="2686000" />
+      <workItem from="1600278600413" duration="293000" />
+      <workItem from="1600279300319" duration="2611000" />
+      <workItem from="1600433114419" duration="2310000" />
     </task>
     <task id="LOCAL-00001" summary="Стартовое добавление ядра сайта">
       <created>1599384343117</created>
@@ -231,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599904688733</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавлена автризация и регистрация, меню">
+      <created>1599904733067</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599904733067</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,30 +228,30 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="113" y="174" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599384646227" />
-    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl" timestamp="1599499245015">
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl" timestamp="1600110442939">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1599499245015" />
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1600110442939" />
     <state x="1342" y="265" key="Github.ShareDialog" timestamp="1599383698601">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1342" y="265" key="Github.ShareDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599383698601" />
-    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog" timestamp="1599498834061">
+    <state x="881" y="275" width="449" height="561" key="NewPhpClassDialog" timestamp="1600279339668">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1258" y="272" width="449" height="561" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599498834061" />
-    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog" timestamp="1599498971840">
+    <state x="881" y="275" width="449" height="561" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1600279339668" />
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog" timestamp="1600278089116">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599498971840" />
-    <state x="685" y="204" key="SettingsEditor" timestamp="1599384531135">
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1600278089116" />
+    <state x="176" y="124" width="1668" height="730" key="SettingsEditor" timestamp="1600281816760">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="685" y="204" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1599384531135" />
-    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599384649495">
+    <state x="176" y="124" width="1668" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1600281816760" />
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1600008835788">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1599384649495" />
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1600008835788" />
     <state x="1213" y="193" width="466" height="721" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599300751577">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -315,17 +264,21 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1246" y="465" width="381" height="176" key="git4idea.remote.GitConfigureRemotesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599384605548" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1600000946126">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1600000946126" />
     <state x="1100" y="272" width="700" height="530" key="recent.locations.popup" timestamp="1598890766327">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1100" y="272" width="700" height="530" key="recent.locations.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1598890766327" />
-    <state x="1115" y="254" key="run.anything.popup" timestamp="1599498856772">
+    <state x="1115" y="254" key="run.anything.popup" timestamp="1599989636886">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1115" y="254" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599498856772" />
-    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599583049255">
+    <state x="1115" y="254" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599989636886" />
+    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599918502207">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599583049255" />
+    <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1599918502207" />
   </component>
 </project>

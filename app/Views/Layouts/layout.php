@@ -112,6 +112,7 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
     </li>
 
 </ul>
+
 <div class="search-top">
 <div class="search">
 <form>
@@ -121,18 +122,24 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 </div>
 <div class="world">
 <ul >
-
     <li><a href="#"><span> </span></a> </li>
-    <li><select class="in-drop">
+    <li>
+        <select class="in-drop">
             <option>RU</option>
             <option>EN</option>
         </select>
+    </li>
+</ul>
+<ul>
+    <li>
+        <?php new \app\Helper\CurrencyHelper()?>
     </li>
 </ul>
 </div>
 
 <div class="clearfix"> </div>
 </div>
+
 <div class="clearfix"> </div>
 
 </div>

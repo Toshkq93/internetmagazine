@@ -306,8 +306,8 @@ select.in-moh{
 }
 ul.wmuSliderPagination {
 	
-	  height: 287px;
-	width: 65px;
+	  height: 304px;
+	  width: 65px;
 	  padding: 9em 2em 0;
 	  border-radius:5px;
 }
@@ -340,7 +340,7 @@ ul.wmuSliderPagination {
 }
 .banner-top{
 	float:left;
-	width:35%;
+	width:90%;
 	background:#fff;
 	  margin-right: 3%;
 	    border-radius: 5px;

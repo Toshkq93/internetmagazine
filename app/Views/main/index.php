@@ -2,36 +2,20 @@
     <div class="container">
         <div class="wmuSlider example1">
             <div class="wmuSliderWrapper">
-                <article style="position: absolute; width: 100%; opacity: 0;">
+                <?php foreach ($salies as $sale):?>
+                <article style="position: center; width: 100%; opacity: 0;">
                     <div class="banner-wrap">
-
                         <div class="banner-top">
                             <a href="single.html">
                                 <div class="banner-top-in">
-                                    <img src="/images/ba.png" class="img-responsive" alt="">
+                                    <img src="/images/<?= $sale['img_sale'];?>" class="img-responsive" alt="">
                                 </div></a>
                             <div class="cart-at grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
+                                <span class="item_price" ><strike><?= $sale['old_price_sale'];?> $ <i></i></strike> </span>
+                                <div class="item_add"><span class="item_price" ><?= $sale['old_price_sale'] * $sale['discount_sale']/100;?> $ <i></i></span></div>
                                 <div class="off">
-                                    <label>35% off !</label>
-                                    <p>White Blended Cotton "still fresh" t-shirt</p>
-                                </div>
-                            </div>
-                            <div class="clearfix"> </div>
-
-                        </div>
-
-
-                        <div class="banner-top banner-bottom">
-                            <a href="single.html">
-                                <div class="banner-top-in at">
-                                    <img src="/images/ba2.png" class="img-responsive" alt="">
-                                </div></a>
-                            <div class="cart-at grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
-                                <div class="off">
-                                    <label>35% off !</label>
-                                    <p>White Blended Cotton "still fresh" t-shirt</p>
+                                    <label><?= $sale['discount_sale'];?>% off !</label>
+                                    <p><?= $sale['description_sale'];?></p>
                                 </div>
                             </div>
                             <div class="clearfix"> </div>
@@ -39,93 +23,13 @@
                         </div>
 
                         <div class="clearfix"> </div>
-
                     </div>
                 </article>
-                <article style="position: absolute; width: 100%; opacity: 0;">
-                    <div class="banner-wrap">
-
-                        <div class="banner-top">
-                            <a href="single.html">
-                                <div class="banner-top-in">
-                                    <img src="/images/ba11.png" class="img-responsive" alt="">
-                                </div></a>
-                            <div class="cart-at grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
-                                <div class="off">
-                                    <label>35% off !</label>
-                                    <p>White Blended Cotton "still fresh" t-shirt</p>
-                                </div>
-                            </div>
-                            <div class="clearfix"> </div>
-
-                        </div>
-
-
-                        <div class="banner-top banner-bottom">
-                            <a href="single.html">
-                                <div class="banner-top-in at">
-                                    <img src="/images/ba21.png" class="img-responsive" alt="">
-                                </div></a>
-                            <div class="cart-at grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
-                                <div class="off">
-                                    <label>35% off !</label>
-                                    <p>White Blended Cotton "still fresh" t-shirt</p>
-                                </div>
-                            </div>
-                            <div class="clearfix"> </div>
-
-                        </div>
-
-                        <div class="clearfix"> </div>
-
-                    </div>
-                </article>
-                <article style="position: absolute; width: 100%; opacity: 0;">
-                    <div class="banner-wrap">
-
-                        <div class="banner-top">
-                            <a href="single.html">
-                                <div class="banner-top-in">
-                                    <img src="/images/ba12.png" class="img-responsive" alt="">
-                                </div></a>
-                            <div class="cart-at grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
-                                <div class="off">
-                                    <label>35% off !</label>
-                                    <p>White Blended Cotton "still fresh" t-shirt</p>
-                                </div>
-                            </div>
-                            <div class="clearfix"> </div>
-
-                        </div>
-
-
-                        <div class="banner-top banner-bottom">
-                            <a href="single.html">
-                                <div class="banner-top-in at">
-                                    <img src="/images/ba22.png" class="img-responsive" alt="">
-                                </div></a>
-                            <div class="cart-at grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price" >123 $ <i> </i> </span></div>
-                                <div class="off">
-                                    <label>35% off !</label>
-                                    <p>White Blended Cotton "still fresh" t-shirt</p>
-                                </div>
-                            </div>
-                            <div class="clearfix"> </div>
-
-                        </div>
-                        <div class="clearfix"> </div>
-
-                    </div>
-                </article>
+                <?php endforeach;?>
             </div>
             <ul class="wmuSliderPagination">
                 <li><a href="#" class="">0</a></li>
                 <li><a href="#" class="">1</a></li>
-                <li><a href="#" class="wmuActive">2</a></li>
             </ul>
         </div>
         <!---->
@@ -159,10 +63,12 @@
                 </script>
                 <!-- //requried-jsfiles-for owl -->
                 <div id="owl-demo" class="owl-carousel text-center">
+                    <?php if(isset($arrivals)):?>
+                    <?php foreach ($arrivals as $arrival):?>
                     <div class="item">
                         <div class=" box-in">
                             <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi.jpg" class="img-responsive" alt="">
+                                <a href="single.html" > <img src="/images/<?= $arrival['img_arrivals'];?>" class="img-responsive" alt="">
                                     <div class="zoom-icon">
 
                                         <ul class="in-by">
@@ -188,309 +94,15 @@
 
                                     </div> </a>
                             </div>
-                            <!---->
+                        
                             <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
+                                <a href="#" class="cup item_add"><span class=" item_price" ><?= $arrival['price_arrivals'];?> $ <i> </i> </span></a>
                             </div>
-                            <!---->
+
                         </div>
                     </div>
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi11.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                            <!---
-                        <a class="cup" href="single.html">123 $<i> </i> </a>
-                        -->
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi12.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi13.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi11.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi13.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi12.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class=" box-in">
-                            <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/pi11.jpg" class="img-responsive" alt="">
-                                    <div class="zoom-icon">
-
-                                        <ul class="in-by">
-                                            <li><h5>sizes:</h5></li>
-                                            <li><span>S</span></li>
-                                            <li><span>XS</span></li>
-                                            <li><span>M</span></li>
-                                            <li><span> L</span></li>
-                                            <li><span>XL</span></li>
-                                            <li><span> XXL</span></li>
-                                        </ul>
-
-
-                                        <ul class="in-by-color">
-                                            <li><h5>colors:</h5></li>
-                                            <li><span > </span></li>
-                                            <li><span class="color"> </span></li>
-                                            <li><span class="color1"> </span></li>
-                                            <li><span class="color2"> </span></li>
-                                            <li><span class="color3"> </span></li>
-
-                                        </ul>
-
-                                    </div> </a>
-                            </div>
-                            <!---->
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>
-                            </div>
-                            <!---->
-                        </div>
-                    </div>
+                    <?php endforeach;?>
+                    <?php endif;?>
                     <div class="clearfix"> </div>
                 </div>
 
@@ -584,19 +196,6 @@
             <input type="submit" value="join us">
         </form>
 
-    </div>
-    <div class="clearfix"> </div>
-</div>
-<div class="bottom-content">
-
-    <div class="col-md-4">
-        <img src="/images/ad1.png" class="img-responsive" alt="">
-    </div>
-    <div class="col-md-4">
-        <img src="/images/ad1.png" class="img-responsive" alt="">
-    </div>
-    <div class="col-md-4">
-        <img src="/images/ad1.png" class="img-responsive" alt="">
     </div>
     <div class="clearfix"> </div>
 </div>

@@ -7,8 +7,9 @@
     display: inline-block;
     color: #A9B2C5;
 }
-
-.btn:hover {color: #fa7455;}
+.top-header-left{
+    float: left;
+}
 
 .success {color: green;}
 .info {color: dodgerblue;}

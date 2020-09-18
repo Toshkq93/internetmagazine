@@ -764,36 +764,24 @@ SELECT|sys.sys_config:null
       <ObjectGrants>ALL PRIVILEGES!
 </ObjectGrants>
     </user>
-    <table id="236" parent="8" name="categories"/>
-    <table id="237" parent="8" name="users"/>
-    <column id="238" parent="236" name="id">
+    <table id="236" parent="8" name="arrivals"/>
+    <table id="237" parent="8" name="categories"/>
+    <table id="238" parent="8" name="currency"/>
+    <table id="239" parent="8" name="sale"/>
+    <table id="240" parent="8" name="users"/>
+    <column id="241" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="239" parent="236" name="name_category">
+    <column id="242" parent="236" name="img_arrivals">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="240" parent="236" name="alias_category">
+    <column id="243" parent="236" name="price_arrivals">
       <Position>3</Position>
-      <DataType>text|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="241" parent="236" name="description_category">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="242" parent="236" name="keyword_cateogry">
-      <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="243" parent="236" name="parent_id">
-      <Position>6</Position>
       <DataType>int(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
@@ -808,38 +796,151 @@ SELECT|sys.sys_config:null
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="246" parent="237" name="user_name">
+    <column id="246" parent="237" name="name_category">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="247" parent="237" name="user_login">
+    <column id="247" parent="237" name="alias_category">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="248" parent="237" name="user_password">
+    <column id="248" parent="237" name="description_category">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="249" parent="237" name="user_email">
+    <column id="249" parent="237" name="keyword_cateogry">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="250" parent="237" name="user_address">
+    <column id="250" parent="237" name="column_category">
+      <Position>6</Position>
+      <DataType>int(12)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="251" parent="237" name="parent_id">
+      <Position>7</Position>
+      <DataType>int(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="252" parent="237" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="253" parent="238" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="254" parent="238" name="title_currency">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="255" parent="238" name="code">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="256" parent="238" name="symbol_left">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="257" parent="238" name="symbol_right">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="258" parent="238" name="value_currency">
+      <Position>6</Position>
+      <DataType>int(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="259" parent="238" name="base_currency">
+      <Position>7</Position>
+      <DataType>int(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="260" parent="238" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="261" parent="239" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="262" parent="239" name="img_sale">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="263" parent="239" name="discount_sale">
+      <Position>3</Position>
+      <DataType>int(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="264" parent="239" name="old_price_sale">
+      <Position>4</Position>
+      <DataType>int(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="265" parent="239" name="description_sale">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="266" parent="239" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="267" parent="240" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="268" parent="240" name="user_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="269" parent="240" name="user_login">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="270" parent="240" name="user_password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="271" parent="240" name="user_email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="272" parent="240" name="user_address">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="251" parent="237" name="is_admin">
+    <column id="273" parent="240" name="is_admin">
       <Position>7</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <key id="252" parent="237" name="PRIMARY">
+    <key id="274" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
