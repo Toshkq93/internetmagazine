@@ -8,41 +8,41 @@ use app\Models\Currency;
 
 class CurrencyHelper
 {
-    protected $tpl;
-    public $currencies;
-    public $currency;
+    protected $tlp;
+    protected $currencies;
+    protected $currency;
+    protected $model_currency;
 
     public function __construct()
     {
-        $this->currency = new Currency();
-        $this->tpl = APP . '/Views/currency/index.php';
-        $this->currencies = $this->currency->getCurrencies();
+        $this->model_currency = new Currency();
+        $this->tlp = APP . '/Views/currency/currency.php';
+        $this->currencies = $this->model_currency->getCurrencies();
+        $this->getCurrency($this->currencies);
         $this->run();
     }
 
     protected function run()
     {
-        $currencies = $this->currencies;
-        $currency = $this->currency;
-        $this->getHtml();
+        echo $this->getHtml();
     }
 
-    public static function getCurrency($currencies)
+    public function getCurrency($currencies)
     {
-        if (isset($_COOKIE['currency']) && array_key_exists($_COOKIE['currency'], $currencies)) {
-            $key = $_COOKIE['currency'];
-        } else {
+        if (isset($_COOKIE['currency']) && array_key_exists($_COOKIE['currency'], $currencies)){
+               $key = $_COOKIE['currency'];
+        }else{
             $key = key($currencies);
         }
-        $currency = $currencies[$key];
-        $currency['code'] = $key;
-        return $currency;
+        $this->currency = $currencies[$key];
+        $this->currency['code'] = $key;
+        return $this->currency;
     }
 
-    public function getHtml()
+    protected function getHtml()
     {
         ob_start();
-        require_once $this->tpl;
+        require_once $this->tlp;
         return ob_get_clean();
     }
 

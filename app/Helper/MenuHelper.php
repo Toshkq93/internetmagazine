@@ -44,9 +44,9 @@ class MenuHelper
             $this->data = $cat;
             $this->tree = $this->getTree();
             $this->menuHtml = $this->getMenuHtml($this->tree);
-            if($this->cache){
+            /*if($this->cache){
                 $cache->set($this->cacheKey, $this->menuHtml, $this->cache);
-            }
+            }*/
         }
         $this->output();
     }

@@ -25,9 +25,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Markito Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--fonts-->
-<link href='http://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
-<!--//fonts-->
 
 <script type="text/javascript" src="/js/move-top.js"></script>
 <script type="text/javascript" src="/js/easing.js"></script>
@@ -115,8 +112,8 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 
 <div class="search-top">
 <div class="search">
-<form>
-    <input type="text" value="Поиск" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск ';}" >
+<form method="get" action="<?= PATH;?>/search">
+    <input type="text" value="Поиск" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск ';}" name="query">
     <input type="submit" value="" >
 </form>
 </div>
@@ -132,7 +129,11 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 </ul>
 <ul>
     <li>
-        <?php new \app\Helper\CurrencyHelper()?>
+        <form action="<?= PATH;?>/currency/change">
+            <select id="currency" class="in-drop">
+                <?php new \app\Helper\CurrencyHelper();?>
+            </select>
+        </form>
     </li>
 </ul>
 </div>
@@ -174,7 +175,6 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 </div>
 </div>
 </div>
-
 <div class="content">
     <div class="container">
         <div class="row">
@@ -252,6 +252,6 @@ $().UItoTop({ easingType: 'easeOutQuart' });
 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 </div>
-
+<script src="/js/my.js"></script>
 </body>
 </html>
