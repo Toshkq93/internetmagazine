@@ -847,100 +847,95 @@ SELECT|sys.sys_config:null
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="256" parent="238" name="symbol_left">
+    <column id="256" parent="238" name="symbol">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="257" parent="238" name="symbol_right">
+    <column id="257" parent="238" name="base_currency">
       <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>int(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="258" parent="238" name="value_currency">
       <Position>6</Position>
-      <DataType>int(255)|0s</DataType>
+      <DataType>float|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="259" parent="238" name="base_currency">
-      <Position>7</Position>
-      <DataType>int(255)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <key id="260" parent="238" name="PRIMARY">
+    <key id="259" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="261" parent="239" name="id">
+    <column id="260" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="262" parent="239" name="img_sale">
+    <column id="261" parent="239" name="img_sale">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="263" parent="239" name="discount_sale">
+    <column id="262" parent="239" name="discount_sale">
       <Position>3</Position>
       <DataType>int(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="264" parent="239" name="old_price_sale">
+    <column id="263" parent="239" name="old_price_sale">
       <Position>4</Position>
       <DataType>int(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="265" parent="239" name="description_sale">
+    <column id="264" parent="239" name="description_sale">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="266" parent="239" name="PRIMARY">
+    <key id="265" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="267" parent="240" name="id">
+    <column id="266" parent="240" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="268" parent="240" name="user_name">
+    <column id="267" parent="240" name="user_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="269" parent="240" name="user_login">
+    <column id="268" parent="240" name="user_login">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="270" parent="240" name="user_password">
+    <column id="269" parent="240" name="user_password">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="271" parent="240" name="user_email">
+    <column id="270" parent="240" name="user_email">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="272" parent="240" name="user_address">
+    <column id="271" parent="240" name="user_address">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="273" parent="240" name="is_admin">
+    <column id="272" parent="240" name="is_admin">
       <Position>7</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <key id="274" parent="240" name="PRIMARY">
+    <key id="273" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

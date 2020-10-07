@@ -11,15 +11,24 @@ $router = new Router([
     ]
 ]);
 
+$router->get('contacts', 'ContactController@index');
+
 $router->get('', 'MainController@index');
 
-$router->post('/login', 'UserController@login');
-$router->get('/signup', 'UserController@signup');
-$router->post('/register', 'UserController@register');
-$router->get('/logout', 'UserController@logout');
+$router->post('login', 'UserController@login');
+//$router->get('signup', 'UserController@signup');
+$router->get('registr', 'UserController@signup');
+$router->post('register', 'UserController@register');
+$router->get('logout', 'UserController@logout');
 
-//$router->get('/search', 'CurrencyController@change');
-$router->get('/currency','CurrencyController@change');
+$router->get('product/:slug', 'ProductController@index');
+
+$router->get('currency','CurrencyController@change');
+
+$router->get('cart/add', 'CartController@add');
+$router->get('cart/show', 'CartController@show');
+$router->get('cart/delete', 'CartController@delete');
+$router->get('cart/clear', 'CartController@clear');
 
 $router->error(function () {
     include WWW . '/error/404.html';

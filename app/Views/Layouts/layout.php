@@ -1,21 +1,16 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="/">
 <title>Markito A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
 <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/js/jquery.min.js"></script>
-<!-- Custom Theme files -->
+<script src="/js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/"></script>
 <!--theme-style-->
 <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/css/my.css" rel="stylesheet" type="text/css" media="all" />
@@ -37,11 +32,62 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 });
 </script>
 <!-- start menu -->
-<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 
 <script src="/js/simpleCart.min.js"> </script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <script type="text/javascript" src="/js/move-top.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!-- start menu -->
+    <link href="/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="/js/megamenu.js"></script>
+    <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+    <link rel="stylesheet" href="/css/etalage.css">
+    <script src="/js/jquery.etalage.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+                  containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+             };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function($){
+
+            $('#etalage').etalage({
+                thumb_image_width: 300,
+                thumb_image_height: 400,
+                source_image_width: 900,
+                source_image_height: 1200,
+                show_hint: true,
+                click_callback: function(image_anchor, instance_id){
+                    alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+                }
+            });
+
+        });
+    </script>
 </head>
 <body>
 <!--header-->
@@ -64,11 +110,11 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">О нас</a>
+        <a class="nav-link" href="<?= PATH;?>/about">О нас</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">Контакты</a>
+        <a class="nav-link" href="<?= PATH;?>/contacts">Контакты</a>
     </li>
 
     <li class="nav-item dropdown">
@@ -102,7 +148,7 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
                     <button type="submit" class="btn btn-default">ВХОД</button>
                 </div>
             </form>
-            <a href="<?= PATH;?>/signup" class="dropdown-item">Регистрация</a>
+            <a href="<?= PATH;?>/registr" class="dropdown-item">Регистрация</a>
             <a class="dropdown-item" href="#">Забыли пароль?</a>
     <?php endif;?>
         </div>
@@ -118,22 +164,20 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 </form>
 </div>
 <div class="world">
-<ul >
-    <li><a href="#"><span> </span></a> </li>
+<!--<ul >
     <li>
         <select class="in-drop">
             <option>RU</option>
             <option>EN</option>
         </select>
     </li>
-</ul>
+</ul>-->
 <ul>
+    <li><a href="#"><span> </span></a> </li>
     <li>
-        <form action="<?= PATH;?>/currency/change">
             <select id="currency" class="in-drop">
                 <?php new \app\Helper\CurrencyHelper();?>
             </select>
-        </form>
     </li>
 </ul>
 </div>
@@ -162,13 +206,19 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 </ul>
 </div>
 <div class="cart box_1">
-<a href="checkout.html">
-<h3> <div class="total">
-        <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-    <img src="/images/cart.png" alt=""/></h3>
-</a>
-<p><a href="javascript" class="simpleCart_empty"><img src="/images/cart-c.png"  alt=""></a></p>
-<div class="clearfix"> </div>
+    <a href="<?= PATH;?>/cart/show" onclick="getCart(); return false;">
+        <h3>
+            <div class="total">
+                <img src="/images/cart.png" alt=""/>
+                <?php if (!empty($_SESSION['cart'])):?>
+                    <span class="simpleCartTotal"><?= round($_SESSION['cart.sum'], 2) . $_SESSION['cart.currency']['symbol'];?></span>
+                <?php else:?>
+                    <span class="simpleCartTotal">Пустая корзина</span>
+                <?php endif;?>
+            </div>
+        </h3>
+    </a>
+    <div class="clearfix"> </div>
 </div>
 
 <div class="clearfix"> </div>
@@ -252,6 +302,30 @@ $().UItoTop({ easingType: 'easeOutQuart' });
 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 </div>
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+                <a href="<?= PATH;?>/cart/view" type="button" class="btn btn-primary">Оформить заказ</a>
+                <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="/js/my.js"></script>
+<script>
+let path = '<?= PATH ?>';
+    course = '<?= $currency['value_currency'] ?>';
+    symbol = '<?= $currency['symbol'] ?>';
+</script>
 </body>
 </html>

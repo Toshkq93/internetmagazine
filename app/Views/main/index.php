@@ -6,16 +6,24 @@
                 <article style="position: center; width: 100%; opacity: 0;">
                     <div class="banner-wrap">
                         <div class="banner-top">
-                            <a href="single.html">
+                            <a href="<?= PATH;?>/product/<?= $sale['alias_product'];?>">
                                 <div class="banner-top-in">
-                                    <img src="/images/<?= $sale['img_sale'];?>" class="img-responsive" alt="">
+                                    <img src="/images/<?= $sale['img_product'];?>" class="img-responsive" alt="">
                                 </div></a>
                             <div class="cart-at grid_1 simpleCart_shelfItem">
-                                <span class="item_price" ><strike><?= $sale['old_price_sale'];?> $ <i></i></strike> </span>
-                                <div class="item_add"><span class="item_price" ><?= $sale['old_price_sale'] * $sale['discount_sale']/100;?> $ <i></i></span></div>
+                                <span class="item_price" ><strike> <?= round($sale['price_product'] / $currency['value_currency'],2);?> <?= $currency['symbol'];?> <i></i></strike> </span>
+                            <div>
+                                <a class="item_add" data-id="<?= $sale['id'];?>" style="color: white;" href="<?= PATH;?>/cart/add?id=<?= $sale['id'];?>">
+                                    <span class="item_price" ><?= round($sale['price_product'] / $currency['value_currency'],2) - round(($sale['price_product'] / $currency['value_currency']) * $sale['discount_product']/100, 2);?><?= $currency['symbol'];?><i></i>
+                                    </span>
+                                </a>
+                            </div>
+
+
+
                                 <div class="off">
-                                    <label><?= $sale['discount_sale'];?>% off !</label>
-                                    <p><?= $sale['description_sale'];?></p>
+                                    <label><?= $sale['discount_product'];?>% off !</label>
+                                    <p><?= $sale['desc_product'];?></p>
                                 </div>
                             </div>
                             <div class="clearfix"> </div>
@@ -68,7 +76,7 @@
                     <div class="item">
                         <div class=" box-in">
                             <div class=" grid_box">
-                                <a href="single.html" > <img src="/images/<?= $arrival['img_arrivals'];?>" class="img-responsive" alt="">
+                                <a href="<?= PATH;?>/product/<?= $arrival['alias_product'];?>" > <img src="/images/<?= $arrival['img_product'];?>" class="img-responsive" alt="">
                                     <div class="zoom-icon">
 
                                         <ul class="in-by">
@@ -96,7 +104,7 @@
                             </div>
                         
                             <div class="grid_1 simpleCart_shelfItem">
-                                <a href="#" class="cup item_add"><span class=" item_price" ><?= $arrival['price_arrivals'];?> $ <i> </i> </span></a>
+                                <a href="<?= PATH;?>/cart/add?id=<?= $arrival['id'];?>" data-id="<?= $arrival['id'];?>" class="cup item_add"><span class=" item_price" ><?= round($arrival['price_product'] / $currency['value_currency'], 2);?><?= $currency['symbol'];?> <i> </i> </span></a>
                             </div>
 
                         </div>
@@ -109,19 +117,19 @@
             </div>
 
         </div>
-
-        <!---->
         <div class="content-middle">
             <h2 class="middle">BEST SALES</h2>
+            <?php if (isset($products)):?>
+            <?php foreach ($products as $product):?>
             <div class="col-best">
                 <div class="col-md-4">
-                    <a href="single.html"><div class="col-in">
+                    <a href="<?= PATH;?>/product/<?= $product['alias_product'];?>"><div class="col-in">
                             <div class="col-in-left">
-                                <img src="/images/ni.jpg" class="img-responsive" alt="">
+                                <img src="/images/<?= $product['img_product'];?>" class="img-responsive" alt="">
                             </div>
                     </a>
                     <div class="col-in-right grid_1 simpleCart_shelfItem">
-                        <h5>fuel t-shirt  mod : 9509</h5>
+                        <h5><?= $product['title_product'];?></h5>
                         <ul class="star">
                             <li><a href="#"><i> </i> </a> </li>
                             <li><a href="#"><i> </i> </a> </li>
@@ -129,57 +137,20 @@
                             <li><i class="in-star"> </i>  </li>
                         </ul>
                         <!---->
-                        <a href="#" class="item_add"><span class="white item_price" >123 $ <i> </i> </span></a>
+                    <a href="<?= PATH;?>/cart/add?id=<?= $product['id'];?>" data-id="<?= $product['id'];?>" class="item_add"><span class="white item_price" ><?= round($product['price_product'] / $currency['value_currency'], 2);?><?= $currency['symbol'];?><i> </i> </span></a>
                         <!---->
                     </div>
                     <div class="clearfix"> </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <a href="single.html"><div class="col-in">
-                        <div class="col-in-left">
-                            <img src="/images/ni1.jpg" class="img-responsive" alt="">
-                        </div>
-                </a>
-                <div class="col-in-right grid_1 simpleCart_shelfItem">
-                    <h5>fuel t-shirt  mod : 9509</h5>
-                    <ul class="star">
-                        <li><i> </i>  </li>
-                        <li><i> </i>  </li>
-                        <li><i> </i>  </li>
-                        <li><i class="in-star"> </i>  </li>
-                    </ul>
-                    <!---->
-                    <a href="#" class="item_add"><span class="white item_price" >123 $ <i> </i> </span></a>
-                    <!---->
-                </div>
-                <div class="clearfix"> </div>
-            </div>
+            <?php endforeach;?>
+            <?php endif;?>
         </div>
-        <div class="col-md-4">
-            <a href="single.html"><div class="col-in">
-                    <div class="col-in-left">
-                        <img src="/images/ni.jpg" class="img-responsive" alt="">
-                    </div>
-            </a>
-            <div class="col-in-right grid_1 simpleCart_shelfItem">
-                <h5>fuel t-shirt  mod : 9509</h5>
-                <ul class="star">
-                    <li><i> </i>  </li>
-                    <li><i> </i>  </li>
-                    <li><i> </i>  </li>
-                    <li><i class="in-star"> </i>  </li>
-                </ul>
-                <!---->
-                <a href="#" class="item_add"><span class="white item_price" >123 $ <i> </i> </span></a>
-                <!---->
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
     <div class="clearfix"> </div>
 </div>
 <div class="content-bottom">
+
+
     <div class="col-md-8 latter">
         <h6>NEWSLETTER</h6>
         <p>sign up now to our newsletter discount! to get the Welcome discount</p>

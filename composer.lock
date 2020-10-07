@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7670530f5e7947acce359eeb69e5b48",
+    "content-hash": "292dc826cfcfd19a99fedbe519333d15",
     "packages": [
         {
             "name": "gabordemooij/redbean",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gabordemooij/redbean.git",
-                "reference": "9240f1d8c0d80802139042921c0d1d5e4a3c89d8"
+                "reference": "ab576c4ef946f27a40c150b2ca8a467a2b424d82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/9240f1d8c0d80802139042921c0d1d5e4a3c89d8",
-                "reference": "9240f1d8c0d80802139042921c0d1d5e4a3c89d8",
+                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/ab576c4ef946f27a40c150b2ca8a467a2b424d82",
+                "reference": "ab576c4ef946f27a40c150b2ca8a467a2b424d82",
                 "shasum": ""
             },
             "require": {
@@ -45,24 +45,24 @@
             "keywords": [
                 "orm"
             ],
-            "time": "2020-09-03T21:21:46+00:00"
+            "time": "2020-09-21T08:02:00+00:00"
         },
         {
             "name": "izniburak/router",
-            "version": "v1.5.3",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/izniburak/php-router.git",
-                "reference": "8c2095bad76f481608ea293b98c00c4d39d215ef"
+                "reference": "839bc8b229e98001c6523bfb3873ec09e0937710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/izniburak/php-router/zipball/8c2095bad76f481608ea293b98c00c4d39d215ef",
-                "reference": "8c2095bad76f481608ea293b98c00c4d39d215ef",
+                "url": "https://api.github.com/repos/izniburak/php-router/zipball/839bc8b229e98001c6523bfb3873ec09e0937710",
+                "reference": "839bc8b229e98001c6523bfb3873ec09e0937710",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "guzzlehttp/guzzle": "^5.3",
@@ -93,7 +93,7 @@
                 "route",
                 "router"
             ],
-            "time": "2020-02-05T21:51:17+00:00"
+            "time": "2019-12-16T19:50:43+00:00"
         },
         {
             "name": "vlucas/valitron",

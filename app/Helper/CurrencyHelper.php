@@ -30,7 +30,7 @@ class CurrencyHelper
     public function getCurrency($currencies)
     {
         if (isset($_COOKIE['currency']) && array_key_exists($_COOKIE['currency'], $currencies)){
-               $key = $_COOKIE['currency'];
+            $key = $_COOKIE['currency'];
         }else{
             $key = key($currencies);
         }

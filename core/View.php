@@ -26,4 +26,11 @@ abstract class View
             require_once $fileLayout;
         }
     }
+
+    public static function loadView($view, $data = [])
+    {
+        extract($data);
+        require_once APP . "/Views/{$view}.php";
+        die();
+    }
 }
