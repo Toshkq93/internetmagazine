@@ -28,5 +28,5 @@ function removeHtml($arr)
 
 function removeHtmlStr($str)
 {
-    return trim(htmlspecialchars(strip_tags($str)));
+    return htmlspecialchars(strip_tags($str));
 }

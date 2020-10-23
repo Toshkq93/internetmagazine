@@ -982,7 +982,7 @@ a.cart:hover{
   width: 100%;
     font-size: 1em;
 }
-.single-bottom ul li input[type="checkbox"]+label span:first-child {
+.single-bottom ul li input[type="checkbox"]+label span {
   width: 18px;
   height: 18px;
   display: inline-block;

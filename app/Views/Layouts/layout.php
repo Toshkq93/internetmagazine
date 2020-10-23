@@ -10,7 +10,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="/js/jquery-2.2.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/"></script>
 <!--theme-style-->
 <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/css/my.css" rel="stylesheet" type="text/css" media="all" />
@@ -159,7 +158,7 @@ $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 <div class="search-top">
 <div class="search">
 <form method="get" action="<?= PATH;?>/search">
-    <input type="text" value="Поиск" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск ';}" name="query">
+    <input type="text" name="query">
     <input type="submit" value="" >
 </form>
 </div>
@@ -315,17 +314,18 @@ $().UItoTop({ easingType: 'easeOutQuart' });
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
-                <a href="<?= PATH;?>/cart/view" type="button" class="btn btn-primary">Оформить заказ</a>
+                <a href="<?= PATH;?>/cart" type="button" class="btn btn-primary">Оформить заказ</a>
                 <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
             </div>
         </div>
     </div>
 </div>
-<script src="/js/my.js"></script>
+<div class="preloader"><img src="images/5.gif"></div>
 <script>
-let path = '<?= PATH ?>';
+    let path = '<?= PATH ?>';
     course = '<?= $currency['value_currency'] ?>';
     symbol = '<?= $currency['symbol'] ?>';
 </script>
+<script src="/js/my.js"></script>
 </body>
 </html>

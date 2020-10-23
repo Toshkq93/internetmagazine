@@ -22,52 +22,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="добавлена функция выбора валют">
-      <change afterPath="$PROJECT_DIR$/app/Controllers/CartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Controllers/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Controllers/ContactController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helper/CartHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Modification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/RelatedProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Views/cart/cart_modal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Views/category/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Views/contact/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Views/product/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/edac0bf0-6c54-4880-ace5-0b33e648b437.xml" afterDir="false" />
+    <list default="true" id="4c4aeb07-ad9b-4994-949c-c5c0445e5450" name="Default Changelist" comment="Добавлена корзина, изменение цены в зависимости от валюты, карточка товара">
+      <change afterPath="$PROJECT_DIR$/app/Controllers/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/SearchController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helper/FilterHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helper/OrderHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Attribute.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/cart/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/category/filter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/filter/filter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/search/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/5.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/CurrencyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CurrencyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helper/CurrencyHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper/CurrencyHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helper/MenuHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper/MenuHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Arrivals.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Currency.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Currency.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Sale.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/Layouts/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Layouts/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/currency/currency.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/currency/currency.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/main/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/category/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/category/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/product/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/product/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/my.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/my.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/gabordemooij/redbean" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gabordemooij/redbean" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/izniburak/router/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/izniburak/router/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/izniburak/router/src/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/tests/RouterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/izniburak/router/tests/RouterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/tests/fixtures/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/tests/fixtures/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/tests/fixtures/travis-ci-apache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/izniburak/router/tests/fixtures/www.conf.default" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,12 +88,11 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="ToolWindowPull Requests.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Controllers" />
-    <property name="settings.editor.selected.configurable" value="database.sql.templating" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../first.loc" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -123,11 +101,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/app/Controllers" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/app/Views/Layouts" />
-      <recent name="$PROJECT_DIR$/core" />
-      <recent name="$PROJECT_DIR$/public/error" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -199,7 +177,24 @@
       <workItem from="1601915618969" duration="3806000" />
       <workItem from="1601921261599" duration="4121000" />
       <workItem from="1602000728942" duration="4240000" />
-      <workItem from="1602090064542" duration="2000000" />
+      <workItem from="1602090064542" duration="4221000" />
+      <workItem from="1602172312339" duration="4095000" />
+      <workItem from="1602348537788" duration="5979000" />
+      <workItem from="1602605810245" duration="2185000" />
+      <workItem from="1602608389928" duration="3138000" />
+      <workItem from="1602692062966" duration="4771000" />
+      <workItem from="1602775340752" duration="3964000" />
+      <workItem from="1602783412030" duration="7074000" />
+      <workItem from="1603039678318" duration="5773000" />
+      <workItem from="1603125024340" duration="3528000" />
+      <workItem from="1603212292205" duration="2991000" />
+      <workItem from="1603215306318" duration="311000" />
+      <workItem from="1603218276628" duration="2167000" />
+      <workItem from="1603220483678" duration="331000" />
+      <workItem from="1603220889911" duration="1185000" />
+      <workItem from="1603382631284" duration="11371000" />
+      <workItem from="1603469063768" duration="4868000" />
+      <workItem from="1603479415680" duration="3746000" />
     </task>
     <task id="LOCAL-00001" summary="Стартовое добавление ядра сайта">
       <created>1599384343117</created>
@@ -250,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600877179519</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавлена корзина, изменение цены в зависимости от валюты, карточка товара">
+      <created>1602092334423</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602092334423</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +275,8 @@
     <MESSAGE value="Добавлена автризация и регистрация, меню" />
     <MESSAGE value="1" />
     <MESSAGE value="добавлена функция выбора валют" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлена функция выбора валют" />
+    <MESSAGE value="Добавлена корзина, изменение цены в зависимости от валюты, карточка товара" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена корзина, изменение цены в зависимости от валюты, карточка товара" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1034" y="210" width="824" height="684" key="#CLI_Interpreters" timestamp="1599499246122">
@@ -288,42 +291,46 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1101" y="176" width="710" height="752" key="#PHP/67.27.1853.1053@67.27.1853.1053" timestamp="1599499247295" />
+    <state x="513" y="405" width="1397" height="297" key="#SQL_Dialects" timestamp="1603213617079">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="513" y="405" width="1397" height="297" key="#SQL_Dialects/67.27.1853.1053@67.27.1853.1053" timestamp="1603213617079" />
     <state x="1218" y="336" width="467" height="432" key="#Web_Browsers" timestamp="1598466539896">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1218" y="336" width="467" height="432" key="#Web_Browsers/67.27.1853.1053@67.27.1853.1053" timestamp="1598466539896" />
-    <state x="1036" y="215" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601116214641">
+    <state x="1036" y="215" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603393299505">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1036" y="215" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601116214641" />
+    <state x="1036" y="215" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603393299505" />
     <state x="113" y="174" width="1482" height="872" key="DiffContextDialog" timestamp="1599384646227">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="113" y="174" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599384646227" />
-    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl" timestamp="1601059141695">
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl" timestamp="1603469881611">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1601059141695" />
+    <state x="1234" y="311" width="447" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1603469881611" />
     <state x="1342" y="265" key="Github.ShareDialog" timestamp="1599383698601">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1342" y="265" key="Github.ShareDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599383698601" />
-    <state x="881" y="275" width="449" height="561" key="NewPhpClassDialog" timestamp="1601568387750">
+    <state x="1035" y="214" width="449" height="561" key="NewPhpClassDialog" timestamp="1603212645340">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="881" y="275" width="449" height="561" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601568387750" />
-    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog" timestamp="1601570104937">
+    <state x="1035" y="214" width="449" height="561" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603212645340" />
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog" timestamp="1603390426238">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601570104937" />
-    <state x="333" y="197" width="1274" height="730" key="SettingsEditor" timestamp="1601222854789">
+    <state x="1268" y="350" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603390426238" />
+    <state x="596" y="126" width="1274" height="730" key="SettingsEditor" timestamp="1603213596427">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="333" y="197" width="1274" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601222854789" />
-    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1600877185603">
+    <state x="596" y="126" width="1274" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1603213596427" />
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1602092383526">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1600877185603" />
+    <state x="977" y="247" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1602092383526" />
     <state x="1034" y="211" width="824" height="684" key="com.intellij.database.dbimport.ImportDialog" timestamp="1600880401051">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -352,13 +359,17 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1100" y="272" width="700" height="530" key="recent.locations.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1598890766327" />
-    <state x="1115" y="254" key="run.anything.popup" timestamp="1601576934016">
+    <state x="1115" y="254" key="run.anything.popup" timestamp="1603465865115">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1115" y="254" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1601576934016" />
+    <state x="1115" y="254" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1603465865115" />
     <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1601403495005">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1114" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1601403495005" />
+    <state x="1176" y="467" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603218653317">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1176" y="467" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1603218653317" />
   </component>
 </project>

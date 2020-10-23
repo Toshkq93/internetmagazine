@@ -62,6 +62,7 @@ class CartController extends Controller
         if ($this->isAjax()) {
             View::loadView('cart/cart_modal');
         }
+        redirect();
     }
 
     public function clear(){
@@ -72,6 +73,10 @@ class CartController extends Controller
         unset($_SESSION['cart.currency']);
         View::loadView('cart/cart_modal');
         }
+    }
+
+    public function index(){
+        View::render('cart/index');
     }
 
 }

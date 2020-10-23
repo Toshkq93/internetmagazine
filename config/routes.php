@@ -29,6 +29,13 @@ $router->get('cart/add', 'CartController@add');
 $router->get('cart/show', 'CartController@show');
 $router->get('cart/delete', 'CartController@delete');
 $router->get('cart/clear', 'CartController@clear');
+$router->get('/cart','CartController@index');
+
+$router->post('order/save', 'OrderController@save');
+
+$router->get('search', 'SearchController@index');
+
+$router->get('/category/:slug', 'CategoryController@index');
 
 $router->error(function () {
     include WWW . '/error/404.html';
