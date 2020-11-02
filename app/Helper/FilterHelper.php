@@ -5,7 +5,6 @@ namespace app\Helper;
 
 
 use app\Models\Attribute;
-use core\Cache;
 
 class FilterHelper
 {
@@ -30,6 +29,9 @@ class FilterHelper
 
     public function getHtml(){
         ob_start();
+        if (!empty($_GET['filter'])){
+            $filter = explode(',', trim(removeHtmlStr($_GET['filter'])));
+        }
         require_once $this->tpl;
         return ob_get_clean();
     }

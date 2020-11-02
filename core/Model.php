@@ -25,6 +25,11 @@ class Model
         return true;
     }
 
+    public function count($table)
+    {
+        return R::count("$table");
+    }
+
     //изменение данных
     public function update($data, $table, $id)
     {

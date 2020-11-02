@@ -27,9 +27,9 @@ class UserController extends Controller
                 $_SESSION['success'] = 'Вы успешно авторизованы!';
                 unset($user['user_password']);
                 $_SESSION['user'] = $user;
-                /*if ($user['is_admin']){
+                if ($user['is_admin']){
                     redirect(ADMIN);
-                }*/
+                }
                 redirect(PATH);
             } else {
                 $_SESSION['error'] = 'Email/пароль введены не верно';

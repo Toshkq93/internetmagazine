@@ -28,4 +28,16 @@ class Order extends Model
         return true;
     }
 
+    public function getOrders(){
+        return R::getAll("SELECT orders.id, orders.user_id, orders.status, orders.date, orders.created_at, orders.currency, users.user_name, ROUND(SUM(order_products.price), 2) AS sum FROM
+            orders JOIN users ON orders.user_id = users.id 
+             JOIN order_products ON orders.id = order_products.order_id
+             GROUP BY orders.id 
+            ");
+    }
+
 }
+
+/*return R::getAll("SELECT orders.id, orders.user_id, orders.status, orders.date, orders.update_at, orders.currency, users.user_name, ROUND(SUM(order_products.price), 2) AS sum FROM orders
+//  JOIN users ON orders.user_id = users.id
+//  JOIN order_products ON orders.id = order_products.order_id");*/

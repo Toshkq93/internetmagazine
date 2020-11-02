@@ -41,9 +41,16 @@ $router->error(function () {
     include WWW . '/error/404.html';
 });
 
-if (!empty($_SESSION['user']['is_admin']) && preg_match('#/admin/?.*#', $_SERVER['REQUEST_URI'])) {
+$router->group('admin', function ($r) {
+    if (!empty($_SESSION['user']['is_admin']) && preg_match('#/admin/?.*#', $_SERVER['REQUEST_URI'])) {
+        \core\View::$layout = 'admin';
 
-}
+        $r->get('', 'admin\MainController@index');
 
+        $r->get('orders', 'admin\OrderController@index');
+        $r->get('order/delete', 'admin\OrderController@delete');
+        $r->get('order/view', 'admin\OrderController@view');
+    }
+});
 
 $router->run();
